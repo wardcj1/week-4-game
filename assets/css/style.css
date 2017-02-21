@@ -1,0 +1,91 @@
+body {
+    background-image: url("../images/greyWashWall.jpg");
+    /*background-image:linear-gradient(to bottom, #666666 0%, silver 100%);*/
+}
+
+.headerbox{
+	font-size: 35px;
+	font-family: font-family: 'Dosis', sans-serif;
+	background-image:linear-gradient(to bottom, #666666 0%, #f00000 100%);
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+	letter-spacing: 1.75px;
+}
+
+.txtclr {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif; 
+    font-weight: 600;
+}
+
+.txtclr2 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif; 
+    font-size: 20px;
+}
+
+.txtclr3 {
+	background-color: #4aaaa5;
+	color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif; 
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.bgwhite {
+	background-color: white;
+}
+
+.userPanel{
+	background-image: url("../images/attackBG.jpg");
+	/*background-image:linear-gradient(to bottom, yellow 0%, black 100%);*/
+}
+
+.panel-title {
+	background-image:linear-gradient(to bottom, #666666 0%, #f00000 100%);
+	color: white;
+	font-size: 24px;
+	font-family: 'Dosis', sans-serif;
+}
+
+button {
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600; 
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+.button-clear{
+		color: brown;
+		width: 100%;
+		font-size: 26px;
+		font-weight: 700; 
+		background-image:linear-gradient(to bottom, white 0%, navy 100%);
+		border-radius: 25px;
+		letter-spacing: 1.5px;
+		border-color: gold;
+}
+
+.footerbox {
+	background-color: #4aaaa5;
+	height: 10px;
+	margin-top: 100px;
+}
+
+.footer {
+	background-color: #666666;
+	color: silver;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
