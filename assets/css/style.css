@@ -1,18 +1,18 @@
 body {
-    background-image: url("images/greyWashWall.jpg");
-    background-image:linear-gradient(to bottom, #666666 0%, silver 100%);
+    background-image: url("../images/greyWashWall.jpg");
+    /*background-image:linear-gradient(to bottom, #666666 0%, silver 100%);*/
 }
 
 .headerbox{
-	font-size: 32px;
-	font-weight: 700;
-	font-family: 'Georgia', Times, Times New Roman, serif; 
-	background-color: #4aaaa5;
+	font-size: 35px;
+	font-family: font-family: 'Dosis', sans-serif;
+	background-image:linear-gradient(to bottom, #666666 0%, #f00000 100%);
 	color: white;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 10px;
 	margin-bottom: 0px;
+	letter-spacing: 1.75px;
 }
 
 .txtclr {
@@ -44,14 +44,15 @@ body {
 }
 
 .userPanel{
-	background-image:linear-gradient(to bottom, #d00000 0%, #666666 100%);
+	background-image: url("../images/attackBG.jpg");
+	/*background-image:linear-gradient(to bottom, yellow 0%, black 100%);*/
 }
 
-p {
+.panel-title {
 	background-image:linear-gradient(to bottom, #666666 0%, #f00000 100%);
 	color: white;
 	font-size: 24px;
-	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
 
 button {
@@ -65,11 +66,11 @@ button {
 }
 
 .button-clear{
-		color: orange;
+		color: brown;
 		width: 100%;
 		font-size: 26px;
 		font-weight: 700; 
-		background-color: navy;
+		background-image:linear-gradient(to bottom, white 0%, navy 100%);
 		border-radius: 25px;
 		letter-spacing: 1.5px;
 		border-color: gold;
