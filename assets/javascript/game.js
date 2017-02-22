@@ -3,9 +3,9 @@
 
 
       // Variables
-      var attacker = "";
-      var defender = "";
-      var operator = "";
+      var attacker = " ";
+      var defender = " ";
+      var operator = " ";
       var attackPower = "";
       var ctrAttackPower = "";
       var health = "";
@@ -33,7 +33,7 @@
             console.log(attacker);
 
             // Print it to the div
-            $("#first-number").html(attacker);
+            $("#attacker-display").html(attacker);
           // }
 
           // If we have received an operator already...
@@ -97,15 +97,15 @@
         // If clear is selected then wipe away all of the content from the screen and unlock the buttons.
         if ($(this).hasClass("clear")) {
 
-          attacker = "";
-          defender = "";
-          operator = "";
+          attacker = " ";
+          defender = " ";
+          operator = " ";
           result = 0;
           hasNumber = false;
           firstNumberComplete = false;
           lockButtons = false;
 
-          $("#first-number, #second-number, #operator, #result").empty();
+          $("#attacker-display, #defender-display, #operator, #result").empty();
         }
       });
     });
