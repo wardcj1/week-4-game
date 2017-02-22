@@ -28,13 +28,16 @@
 
             // Then grab the number of the value clicked and build a string with it
             attacker += $(this).attr("value");
-
+            var person = alert("You selected " + attacker + " as your avatar. Is this correct?");
+                if (person = true) {
+                 
             // Print the number to the firstPage
             console.log(attacker);
 
             // Print it to the div
             $("#attacker-display").html(attacker);
-          // }
+            $(this).fadeout();
+           }
 
           // If we have received an operator already...
           // else {
@@ -46,7 +49,7 @@
             console.log(defender);
 
             // Print it to the div
-            $("#second-number").html(defender);
+            $("#defender-display").html(defender);
           // }
         // }
 
