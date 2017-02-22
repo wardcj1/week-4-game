@@ -5,7 +5,7 @@ body {
 
 .headerbox{
 	font-size: 35px;
-	font-family: font-family: 'Dosis', sans-serif;
+	font-family: 'Chango';
 	background-image:linear-gradient(to bottom, #666666 0%, #f00000 100%);
 	color: white;
 	padding-left: 20px;
@@ -45,6 +45,7 @@ body {
 
 .userPanel{
 	background-image: url("../images/attackBG.jpg");
+	margin-top: 25px;
 	/*background-image:linear-gradient(to bottom, yellow 0%, black 100%);*/
 }
 
@@ -53,6 +54,18 @@ body {
 	color: white;
 	font-size: 24px;
 	font-family: 'Dosis', sans-serif;
+}
+
+.panel-body {
+	color: white;
+	font-size: 18px;
+	font-family: 'Chango', sans-serif;
+}
+
+.win-loss {
+	color: white;
+	font-size: 18px;
+	font-family: 'Chango', sans-serif;	
 }
 
 button {
@@ -73,13 +86,13 @@ button {
 }
 
 .button-clear{
-		color: brown;
-		width: 100%;
+		color: #f1f1f1;
+		width: 70%;
 		font-size: 26px;
-		font-weight: 700; 
-		background-image:linear-gradient(to bottom, white 0%, navy 100%);
+		font-family: 'Chango', sans-serif;
+		background-image:linear-gradient(to bottom, white 0%, #0068a9 25%, #293582 100%);
 		border-radius: 25px;
-		letter-spacing: 1.5px;
+		letter-spacing: 3px;
 		border-color: gold;
 }
 

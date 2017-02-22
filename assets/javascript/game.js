@@ -1,9 +1,14 @@
     $(document).ready(function() {
 
+
+
       // Variables
-      var firstNumber = "";
-      var secondNumber = "";
+      var attacker = "";
+      var defender = "";
       var operator = "";
+      var attackPower = "";
+      var ctrAttackPower = "";
+      var health = "";
       var result = 0;
       var hasNumber = false;
       var firstNumberComplete = false;
@@ -12,88 +17,88 @@
       // Check if any button is clicked...
       $(document).on("click", "button", function() {
 
-        // Checks if it's a number and that its not the end of the calculation ("!lockButtons")
-        if ($(this).hasClass("number") && !lockButtons) {
+        // // Checks if it's a number and that its not the end of the calculation ("!lockButtons")
+        // if ($(this).hasClass("number") && !lockButtons) {
 
-          // We'll then set our "hasNumber" variable to true to indicate that we can proceed in selecting an operator.
-          hasNumber = true;
+        //   // We'll then set our "hasNumber" variable to true to indicate that we can proceed in selecting an operator.
+        //   hasNumber = true;
 
-          // If we haven't received an operator yet...
-          if (firstNumberComplete === false) {
+        //   // If we haven't received an operator yet...
+        //   if (firstNumberComplete === false) {
 
             // Then grab the number of the value clicked and build a string with it
-            firstNumber += $(this).attr("value");
+            attacker += $(this).attr("value");
 
             // Print the number to the firstPage
-            console.log(firstNumber);
+            console.log(attacker);
 
             // Print it to the div
-            $("#first-number").html(firstNumber);
-          }
+            $("#first-number").html(attacker);
+          // }
 
           // If we have received an operator already...
-          else {
+          // else {
 
             // Grab the number of the value clicked and build a string with it
-            secondNumber += $(this).attr("value");
+            defender += $(this).attr("value");
 
             // Print the number to the firstPage
-            console.log(secondNumber);
+            console.log(defender);
 
             // Print it to the div
-            $("#second-number").html(secondNumber);
-          }
-        }
+            $("#second-number").html(defender);
+          // }
+        // }
 
-        // Checks if its an operator (but not "=")
-        if ($(this).hasClass("operator") && hasNumber && !lockButtons) {
-          firstNumberComplete = true;
+        // // Checks if its an operator (but not "=")
+        // if ($(this).hasClass("operator") && hasNumber && !lockButtons) {
+        //   firstNumberComplete = true;
 
-          // Set the visual to show the operator's symbol
-          $("#operator").html("<h1>" + $(this).text() + "</h1>");
-          operator = $(this).attr("value");
-        }
+        //   // Set the visual to show the operator's symbol
+        //   $("#operator").html("<h1>" + $(this).text() + "</h1>");
+        //   operator = $(this).attr("value");
+        // }
 
-        // Checks if the equal button has been pressed. If so...
-        if ($(this).hasClass("equal")) {
+        // // Checks if the equal button has been pressed. If so...
+        // if ($(this).hasClass("equal")) {
 
-          // Lock the keyboard from being clicked
-          lockButtons = true;
+        //   // Lock the keyboard from being clicked
+        //   lockButtons = true;
 
-          // Convert the numbers into integers
-          firstNumber = parseInt(firstNumber);
-          secondNumber = parseInt(secondNumber);
+        //   // Convert the numbers into integers
+        //   attacker = parseInt(attacker);
+        //   defender = parseInt(defender);
 
-          // Then figure out which operator was clicked and perform the necessary functions.
-          // Then show the result in the HTML
-          if (operator === "plus") {
-            result = firstNumber + secondNumber;
-          }
+        //   // Then figure out which operator was clicked and perform the necessary functions.
+        //   // Then show the result in the HTML
+        //   if (operator === "plus") {
+        //     result = attacker + defender;
+        //   }
 
-          if (operator === "minus") {
-            result = firstNumber - secondNumber;
-          }
+        //   if (operator === "minus") {
+        //     result = attacker - defender;
+        //   }
 
-          if (operator === "times") {
-            result = firstNumber * secondNumber;
-          }
+        //   if (operator === "times") {
+        //     result = attacker * defender;
+        //   }
 
-          if (operator === "divide") {
-            result = firstNumber / secondNumber;
-          }
+        //   if (operator === "divide") {
+        //     result = attacker / defender;
+        //   }
 
-          if (operator === "power") {
-            result = Math.pow(firstNumber, secondNumber);
-          }
+        //   if (operator === "power") {
+        //     result = Math.pow(attacker, defender);
+        //   }
 
           $("#result").html(result);
-        }
+        // }
 
         // If clear is selected then wipe away all of the content from the screen and unlock the buttons.
         if ($(this).hasClass("clear")) {
 
-          firstNumber = "";
-          secondNumber = "";
+          attacker = "";
+          defender = "";
           operator = "";
           result = 0;
           hasNumber = false;

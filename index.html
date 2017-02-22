@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <title>WORLD DOMINATION GAME</title>
 
-  <!-- Added link to the jQuery Library -->
+  <!-- Add link to the jQuery Library -->
   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <!-- Add link to js file -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
   <!-- Orbitron, Dosis font families -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis|Orbitron" rel="stylesheet">
-  <!-- Added a link to Bootstrap-->
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Orbitron|Chango" rel="stylesheet">
+  <!-- Add a link to Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <!-- Added a link to CSS file -->
+  <!-- Add a link to CSS file -->
   <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -68,7 +70,7 @@
           <div class="panel-body">
           <!-- new row -->
               <div class="row">
-          <div class="col-md-4"><button class="btn contBtn"><img class="img img-responsive" src="assets/images/northamerica2.jpg" alt="North America"><h3>North America</h3></button></div>
+          <div class="col-md-4"><button class="btn contBtn" value="North America"><img class="img img-responsive" src="assets/images/northamerica2.jpg" alt="North America"><h3>North America</h3></button></div>
           <div class="col-md-4"><button class="btn contBtn"><img class="img img-responsive" src="assets/images/europe.jpg" alt="Europe"><h3>Europe</h3></button></div>
           <div class="col-md-4"><button class="btn contBtn"><img class="img img-responsive" src="assets/images/asia.jpg" alt="Asia"><h3>Asia</h3></button></div>
               </div>
@@ -88,12 +90,14 @@
       </div>
 
       <!-- Battlefield Panel -->
-      <div class="col-lg-2 userPanel">
+  <div class="container">
+     <div class="row">
+      <div class="col-md-2 userPanel">
         <center><button id="attackBtn" class="btn btn-lg btn-danger" value="attackBtn">Launch Attack!</button>
         <button id="retreatBtn" class="btn btn-md btn-default" value="retreatBtn">-Retreat-</button>
         </center>
       </div>
-      <div class="col-lg-8">
+      <div class="col-md-8">
         <div class="panel panel-title">
           <div class="panel-heading">
             <h4><center>Battlefield</center></h4>
@@ -101,21 +105,27 @@
           <div class="panel-body">
             <div class="row">
               <div class="col-md-6">
-                <h4 id="attacker">Attacker: </h4></div>
+                <div id="attacker-display">Attacker: </div></div>
               <div class="col-md-6">
-                <h4 id="defender">Defender: </h4></div>
+                <div id="defender-display">Defender: </div></div>
             <hr>
             <h1 id="result"></h1>
           </div>
-        </div>
-      </div>  
-          <div class="col-lg-2"></div>
+         </div>
+        </div>  
+      </div>
+          <div class="col-md-2 win-loss">
+            <div id="attacker-display">Wins: </div>
+            <div id="attacker-display">Losses: </div>
+          </div>
           <div class="row">
-            <div class="col-lg-12">
-            <button id="button-clear" class="clear button-clear" value="clear">RESET</button></div>
-              </div>
+            <div class="col-md-12">
+            <center><button id="button-clear" class="clear button-clear" value="clear">RESET</button></center></div>
+          </div>
         </div>
       </div>
+    </div>
+
 <div class="footerbox"></div>
 
 <footer class="footer">
